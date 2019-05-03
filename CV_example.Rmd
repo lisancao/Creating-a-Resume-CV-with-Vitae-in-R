@@ -54,3 +54,17 @@ tribble(
 ) %>%
   brief_entries(award, year, from)
 ```
+
+# Selected talks
+```{r}
+tribble(
+  ~name, ~event, ~location, ~year,
+  "WHAT", "EVENT", "WHERE", 2018, 
+) %>% 
+  detailed_entries(
+    what = name,
+    when = year,
+    with = event,
+    where = location
+  )
+```
